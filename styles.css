@@ -76,6 +76,31 @@ section {
   font-size: 14px;
 }
 
+.suvidha-new {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 14px;
+}
+
+.ware-features {
+  width: 50% !important;
+}
+
+.ware-image {
+  width: 50% !important;
+}
+
+.suvidha-new-mobile {
+  display: none !important;
+}
+
+
+#suvidha-mobile {
+  display: none;
+}
+
+
 .img-highlight {
     display: flex;
     flex-direction: column;
@@ -220,8 +245,24 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
-  section {
-    flex-direction: column;
+@media screen and (min-width: 700px) {
+  .suvidha-new-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .suvidha-new {
+    display: none !important;
+  }
+  
+  .ware-features {
+    width: 100% !important;
+  }
+
+  .ware-image {
+    width: 100% !important;
+    padding:25px;
   }
 }
